@@ -5,14 +5,36 @@ mat-spinner {
 	margin:auto;
 }
 
+
 .alig {
-	margin-top: 20px;
+	 background: linear-gradient(to right, #56ccf2, #2f80ed);
+	padding: 1rem;
+	color:#fff;
+	font-family: 'Roboto';
+	 margin-top: 20px;
 	margin-bottom:40px; 
 	margin-left:38%;
 	font-size:30px;
 	font-weight: bold;
 }
 
+.mat-form-field.mat-focused .mat-form-field-label{
+	color: #fff !important;
+}
+.mat-card-title{
+	margin: 0 0 1rem 0;
+}
+
+
+.form-feilds{
+	display: flex;
+	justify-content: space-around;
+}
+.form-feilds>div{
+	flex:1;
+	padding: 0 1rem;
+	margin: .5rem;
+}
 .alig1 {
 	margin-top: 15px;
 	margin-left: 30px;
@@ -24,27 +46,55 @@ input[type="file"]{
 .image-preview {
 	height: 5rem;
 	margin: 1rem 0;
+	padding: 1rem;
 }
 .image-preview img {
-	height: 100%;
+	max-height: 10rem;
+	width: auto;
+	
+}
+.alig1[_ngcontent-c1]{
+	margin:0;
 }
 .upload {
 	width:100%;
 	margin-left:43%;
 }
+.mat-card{
+	border-radius: 1rem !important;
+	overflow: hidden;
+	padding:0 0 1rem 0;
+	box-shadow: 4px 10px 1rem rgba(0,0,0,.2);
+}
 .add {
+	
 	width:100%;
 	text-align: center;
 	margin-top: 20px;
+	display: flex;
+	justify-content: center;
+
 }
 .btn {
+	height: 40px;
+	width: 40px;
+display: block;
 	border:none;
 	margin-bottom: 20px;
+	background: linear-gradient(to right, #56ccf2, #2f80ed);
+	border-radius: 50%;
+	font-size: 1.4rem;
+	color:#fff;
+	transition:  all .2s;
+	box-shadow: none;
+
+	
 
 }
 .btn:hover {
 	cursor:pointer;
 	border:none;
+	box-shadow: 2px 5px 1rem rgba(0,0,0,.2);
 }
 .btn:focus {
 	outline:none;
