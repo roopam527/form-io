@@ -50,7 +50,8 @@
 			<img *ngIf="imgUrl!=null" [src]="imgUrl">
 		</div>
 		<div class="foot">
-			<img class="delete" (click)="removeForm(i)" *ngIf="!flagArray2[i]" src="../assets/delete.svg">
+				<button class="delete" (click)="removeForm(i)" *ngIf="!flagArray2[i]" class="btn" (click)="addNewform(i)"><i class="fas fa-trash"></i></button>
+			<!--  -->
 	       <button mat-raised-button class="alig1" color="primary" *ngIf="flagArray2[i]"type="submit"
 	       [disabled]="SignupForm.invalid || yearsControl.hasError('required')">Save And Next</button>
 	    </div>
